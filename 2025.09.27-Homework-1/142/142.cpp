@@ -1,14 +1,21 @@
 #include <cstdio>
+#include <cstdlib>
 
 int main(int argc, char** argv)
 {
     int a = 0;
     int b = 0;
 
-    scanf_s("%d", &a);
-    scanf_s("%d", &b);
+    FILE* fi;
+    FILE* fo;
 
-    printf("%d + %d = %d", a, b, a + b);
-    
+    fi = fopen("INPUT.TXT", "r");
+    fscanf_s(fi, "%d %d", &a, &b);
+    fclose(fi);
+
+    fo = fopen("OUTPUT.TXT", "w");
+    fprintf(fo, "%d", a + b);
+    fclose(fo);
+
     return 0;
 }
