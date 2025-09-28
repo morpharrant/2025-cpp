@@ -1,13 +1,7 @@
 #include <cstdio>
-#include <cstdlib>
 
-int main(int argc, char** argv)
-{
-    FILE* fo;
+int main(int argc, char **argv) {
+  printf("Hello world!");
 
-    fo = fopen("OUTPUT.TXT", "w");
-    fprintf(fo, "Hello world!");
-    fclose(fo);
-
-    return 0;
+  return 0;
 }

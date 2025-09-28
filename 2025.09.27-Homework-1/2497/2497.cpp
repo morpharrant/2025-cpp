@@ -1,26 +1,10 @@
 #include <cstdio>
-#include <cstdlib>
 
-int main(int argc, char** argv)
-{
+int main(int argc, char **argv) {
+  long long a = 0, b = 0, c = 0;
 
-    FILE* fi;
-    FILE* fo;
+  scanf_s("%lld %lld %lld", &a, &b, &c);
+  printf("%lld", a + b + c);
 
-    long long a = 0;
-    long long b = 0;
-    long long c = 0;
-
-    fi = fopen("INPUT.TXT", "r");
-    fscanf(fi, "%lld %lld %lld", &a, &b, &c);
-    fclose(fi);
-
-    long long sum = 0;
-    sum = a + b + c;
-
-    fo = fopen("OUTPUT.TXT", "w");
-    fprintf(fo, "%lld", sum);
-    fclose(fo);
-
-    return 0;
+  return 0;
 }

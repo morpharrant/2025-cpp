@@ -1,24 +1,11 @@
 #include <cstdio>
-#include <cstdlib>
 
-int main(int argc, char** argv)
-{
-    
-    FILE* fi;
-    FILE* fo;
+int main(int argc, char **argv) {
+  long long a = 0, num = 0;
 
-    long long a = 0;
-    long long num = 0; // intermediate number
+  scanf_s("%lld", &a);
+  num = (a + 1) / 2;
+  printf("%lld", num * num);
 
-    fi = fopen("INPUT.TXT", "r");
-    fscanf(fi, "%lld", &a);
-    fclose(fi);
-
-    num = (a + 1) / 2;
-
-    fo = fopen("OUTPUT.TXT", "w");
-    fprintf(fo, "%lld", num * num);
-    fclose(fo);
-    
-    return 0;
+  return 0;
 }

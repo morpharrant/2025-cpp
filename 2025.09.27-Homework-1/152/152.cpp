@@ -1,20 +1,12 @@
 #include <cstdio>
-#include <cstdlib>
 
-int main(int argc, char** argv)
-{
-    FILE* fi;
-    FILE* fo;
+int main(int argc, char **argv) {
+  int a = 0;
 
-    int a = 0;
+  scanf_s("%d", &a);
+  printf("The next number for the number %d is %d.\nThe previous number for "
+         "the number %d is %d.",
+         a, a + 1, a, a - 1);
 
-    fi = fopen("INPUT.TXT", "r");
-    fscanf(fi, "%d", &a);
-    fclose(fi);
-
-    fo = fopen("OUTPUT.TXT", "w");
-    fprintf(fo, "The next number for the number %d is %d.\nThe previous number for the number %d is %d.", a, a + 1, a, a - 1);
-    fclose(fo);
-
-    return 0;
+  return 0;
 }

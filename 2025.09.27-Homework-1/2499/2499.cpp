@@ -1,22 +1,10 @@
 #include <cstdio>
-#include <cstdlib>
 
-int main(int argc, char** argv)
-{
-    
-    FILE* fi;
-    FILE* fo;
+int main(int argc, char **argv) {
+  long long n = 0, m = 0;
 
-    long long n = 0;
-    long long m = 0;
+  scanf_s("%lld %lld", &n, &m);
+  printf("%lld", (m - 1) * (n - 1) + 1);
 
-    fi = fopen("INPUT.TXT", "r");
-    fscanf(fi, "%lld %lld", &n, &m);
-    fclose(fi);
-
-    fo = fopen("OUTPUT.TXT", "w");
-    fprintf(fo, "%lld", (m - 1) * (n - 1) + 1);
-    fclose(fo);
-    
-    return 0;
+  return 0;
 }
