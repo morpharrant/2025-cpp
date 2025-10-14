@@ -10,8 +10,6 @@ int main() {
     int temp = 0;
 
     scanf("%d %d %d\n%d %d %d", &a1, &b1, &c1, &a2, &b2, &c2);
-
-    // сортировка первой коробки
     if (a1 > b1) {
         temp = a1;
         a1 = b1;
