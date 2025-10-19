@@ -1,19 +1,19 @@
 #include <cstdio>
-
+ 
 int main(int argc, char** argv)
 {
-    int x = 0;
-    int y = 0;
+    float x = 0;
+    float y = 0;
     int d = 1;
-
-    scanf_s("%d %d", &x, &y);
-
+ 
+    scanf_s("%f %f", &x, &y);
+ 
     while (x < y) {
-        x = (x * 115 + 99) / 100;
+        x = x * 1.15;
         d++;
     }
-
+ 
     printf_s("%d", d);
-
+ 
     return 0;
 }

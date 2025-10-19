@@ -14,15 +14,17 @@ int main(int argc, char** argv)
         return 0;
     }
 
-    if (n == 1) {
+    else if (n == 1) {
         printf_s("%d", a1);
         return 0;
     }
 
-    while (n-- > 1) {
-        an = a0 + a1;
-        a0 = a1;
-        a1 = an;
+    else {
+        while (n-- > 1) {
+            an = a0 + a1;
+            a0 = a1;
+            a1 = an;
+        }
     }
 
     printf_s("%d", an);
