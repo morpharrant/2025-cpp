@@ -1,4 +1,5 @@
 #include <cstdio>
+// компилятор информатикса ругался на scanf_s, тестировался код со scanf
 
 int main(int argc, char** argv)
 {   
