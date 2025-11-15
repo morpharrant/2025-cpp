@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 {
     double a = 0;
     int n = 0;
-    scanf("%lf %d", &a, &n);
+    scanf_s("%lf %d", &a, &n);
     printf("%lf", power(a, n));
 
     return 0;
